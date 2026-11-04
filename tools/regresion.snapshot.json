@@ -1,0 +1,802 @@
+{
+  "mcq": {
+    "kind": "mcq",
+    "r": "{\"did\":\"mcq_solved\",\"marked\":1,\"fromKnown\":0,\"kind\":\"mcq\",\"retry\":{\"did\":\"mcq_solved\",\"marked\":1,\"fromKnown\":0},\"explorador\":{\"marcado\":false,\"firma\":\"mcq|practice|\",\"pruebas\":[{\"accion\":\"clic: label.prMCQ__answerLabel \\\"A\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: label.prMCQ__answerLabel \\\"B\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false}],\"segundos\":5},\"taskMarked\":false}",
+    "trace": "click prMCQ__answerLabel:A | click prMCQ__answerLabel:A | click prMCQ__answerLabel:A | click prMCQ__answerLabel:B | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "dnd": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_no_cae\",\"moves\":2,\"metodos\":{},\"kind\":\"dnd\",\"retry\":{\"did\":\"dnd_no_cae\",\"moves\":2,\"metodos\":{}},\"explorador\":{\"marcado\":false,\"firma\":\"dnd|practice|dndZone\",\"pruebas\":[{\"accion\":\"arrastrar: span.dnditem \\\"uno\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"uno\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"uno\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"dos\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"dos\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"dos\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"tres\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"tres\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false},{\"accion\":\"arrastrar: span.dnditem \\\"tres\\\" → span.dndZone\",\"como\":\"ok\",\"cambio\":false,\"marco\":false}],\"segundos\":31},\"taskMarked\":false}",
+    "trace": "pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:dos | pointerup dndZone: | pointerdown dnditem:dos | pointerup dndZone: | pointerdown dnditem:dos | pointerup dndZone: | pointerdown dnditem:tres | pointerup dndZone: | pointerdown dnditem:tres | pointerup dndZone: | pointerdown dnditem:tres | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "seq": {
+    "kind": "sequence",
+    "r": "{\"did\":\"sequence_unverified\",\"kind\":\"sequence\",\"retry\":{\"did\":\"sequence_unverified\"},\"explorador\":{\"marcado\":false,\"firma\":\"sequence|practice|dndZone\",\"pruebas\":[],\"segundos\":0},\"taskMarked\":false}",
+    "trace": "pointerdown dnditem:1 | pointerup dndZone:2 | pointerdown dnditem:2 | pointerup dndZone:1 | pointerdown dnditem:1 | pointerup dnditem:2 | pointerdown dnditem:2 | pointerup dnditem:1 | pointerdown dnditem:1 | pointerup dndZone:2 | pointerdown dnditem:2 | pointerup dndZone:1 | pointerdown dnditem:1 | pointerup dnditem:2 | pointerdown dnditem:2 | pointerup dnditem:1 | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "fitb": {
+    "kind": "fitb",
+    "r": "{\"did\":\"fitb_solved\",\"n\":1,\"waitDone\":3500,\"kind\":\"fitb\",\"retry\":{\"did\":\"fitb_solved\",\"n\":1,\"waitDone\":3500},\"explorador\":{\"marcado\":false,\"firma\":\"fitb|practice|\",\"pruebas\":[{\"accion\":\"clic: span.DDLOptions__selected\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: li.DDLOptions__listItem \\\"x\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: li.DDLOptions__listItem \\\"y\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false}],\"segundos\":7},\"taskMarked\":false}",
+    "trace": "click DDLOptions__selected: | click DDLOptions__listItem:x | click DDLOptions__selected: | click DDLOptions__listItem:x | click DDLOptions__selected: | click DDLOptions__listItem:x | click DDLOptions__listItem:y | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "text": {
+    "kind": "text",
+    "r": "{\"did\":\"text_solved\",\"n\":1,\"editados\":0,\"long\":false,\"waitDone\":3500,\"kind\":\"text\",\"retry\":{\"did\":\"text_solved\",\"n\":0,\"editados\":1,\"long\":false,\"waitDone\":3500,\"como\":[\"simulado\"]},\"explorador\":{\"marcado\":false,\"firma\":\"text|practice|\",\"pruebas\":[{\"accion\":\"teclear: input.\",\"como\":\"simulado\",\"cambio\":true,\"marco\":false}],\"segundos\":2},\"taskMarked\":false}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "writing": {
+    "kind": "writing",
+    "r": "{\"did\":\"writing_solved\",\"words\":30,\"kind\":\"writing\",\"taskMarked\":false}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "select": {
+    "kind": "select_text",
+    "r": "{\"did\":\"select_text_solved\",\"selectedCount\":0,\"kind\":\"select_text\",\"retry\":{\"did\":\"select_text_solved\",\"selectedCount\":0},\"explorador\":{\"marcado\":false,\"firma\":\"select_text|practice|\",\"pruebas\":[],\"segundos\":0},\"taskMarked\":false}",
+    "trace": "click st learning__selectTxt_st:frase uno | click st learning__selectTxt_st:frase uno | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "speech": {
+    "kind": "open_speech",
+    "r": "{\"did\":\"open_speech\",\"ok\":false,\"state\":\"intro\",\"kind\":\"open_speech\",\"taskMarked\":false}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "testStart": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_started\"}",
+    "trace": "click btnStartTest:Start",
+    "ls": null
+  },
+  "review": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":1,\"saved\":1}",
+    "trace": "click tab:Correct Answer | pointerdown tab:Correct Answer | pointerup tab:Correct Answer | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 1||Step 4: Test\":{\"1\":{\"mcq\":[{\"q\":\"Q1?\",\"a\":[\"B\"]}]}}}"
+  },
+  "score": {
+    "kind": "test_score",
+    "r": "{\"did\":\"opened_review_forced\",\"pct\":40}",
+    "trace": "click learning__testReviewLink:Review",
+    "ls": null
+  },
+  "replay": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"2/3\",\"dnd\":{\"did\":\"dnd_replay\",\"moves\":3,\"ok\":0,\"total\":3,\"mal\":[{\"hueco\":1,\"quiere\":[\"tres\"],\"hay\":[]},{\"hueco\":2,\"quiere\":[\"uno\"],\"hay\":[]},{\"hueco\":3,\"quiere\":[\"dos\"],\"hay\":[]}]}}",
+    "trace": "pointerdown dnditem:tres | pointerup dndZone: | pointerdown dnditem:uno | pointerup dndZone: | pointerdown dnditem:dos | pointerup dndZone: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 1||Step 4: Test\":{\"2\":{\"dnd\":[{\"label\":\"x\",\"texts\":[\"tres\"],\"text\":\"tres\"},{\"label\":\"x\",\"texts\":[\"uno\"],\"text\":\"uno\"},{\"label\":\"x\",\"texts\":[\"dos\"],\"text\":\"dos\"}]}}}"
+  },
+  "reviewEndDropdown": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"test_reopened\"}",
+    "trace": "click learning__dropDownListTitleW--lessons:Lesson 5: Meeti | click learning__dropDownList_item:4. Past Form of | click learning__dropDownListTitleW--steps:Step 1: Explora | click learning__dropDownList_item:3. Prueba",
+    "ls": null
+  },
+  "reviewEndPrev": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"test_reopened\"}",
+    "trace": "click tasksBtprev learning__prevItemLink:<",
+    "ls": null
+  },
+  "reviewDnD": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":2,\"saved\":2}",
+    "trace": "click A:Respuesta corre | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 1: Introduction: Ecotourism||Step 5: Repasemos\":{\"2\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"debris\"],\"text\":\"debris\"},{\"label\":\"\",\"texts\":[\"coastline\"],\"text\":\"coastline\"}]}}}"
+  },
+  "reviewClassif": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":5,\"saved\":2}",
+    "trace": "click A:Respuesta corre | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 2: The Experience of a Lifetime||Step 5: Repasemos\":{\"5\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"Volunteer vacations help.\",\"Ulithi has turtles.\"],\"text\":\"Volunteer vacations help.\"},{\"label\":\"\",\"texts\":[\"You must snorkel.\"],\"text\":\"You must snorkel.\"}]}}}"
+  },
+  "replayClassif": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"5/6\",\"dnd\":{\"did\":\"dnd_replay\",\"moves\":3,\"ok\":0,\"total\":2,\"mal\":[{\"hueco\":1,\"quiere\":[\"Volunteer vacations help.\",\"Ulithi has turtles.\"],\"hay\":[]},{\"hueco\":2,\"quiere\":[\"You must snorkel.\"],\"hay\":[]}]}}",
+    "trace": "pointerdown dnditem draggable:Volunteer vacat | pointerup dndZone: | pointerdown dnditem draggable:Ulithi has turt | pointerup dndZone: | pointerdown dnditem draggable:You must snorke | pointerup dndZone: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 2: The Experience of a Lifetime||Step 5: Repasemos\":{\"5\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"Volunteer vacations help.\",\"Ulithi has turtles.\"],\"text\":\"Volunteer vacations help.\"},{\"label\":\"\",\"texts\":[\"You must snorkel.\"],\"text\":\"You must snorkel.\"}]}}}"
+  },
+  "reviewSeq": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":4,\"saved\":7}",
+    "trace": "click A:Respuesta corre | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 3: The Party||Step 5: Repasemos\":{\"4\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\"],\"text\":\"Dalia asks Gabrielle why she's not ready to go to the party.\"},{\"label\":\"\",\"texts\":[\"Gabrielle tells Dalia she's not going to the party.\"],\"text\":\"Gabrielle tells Dalia she's not going to the party.\"},{\"label\":\"\",\"texts\":[\"Dalia tries to convince Gabrielle to come with her.\"],\"text\":\"Dalia tries to convince Gabrielle to come with her.\"},{\"label\":\"\",\"texts\":[\"Gabrielle finally agrees and goes to get ready.\"],\"text\":\"Gabrielle finally agrees and goes to get ready.\"},{\"label\":\"\",\"texts\":[\"Gabrielle and Dalia enter the party.\"],\"text\":\"Gabrielle and Dalia enter the party.\"},{\"label\":\"\",\"texts\":[\"Gabrielle joins the party.\"],\"text\":\"Gabrielle joins the party.\"}],\"seq\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\",\"Gabrielle tells Dalia she's not going to the party.\",\"Dalia tries to convince Gabrielle to come with her.\",\"Gabrielle finally agrees and goes to get ready.\",\"Gabrielle and Dalia enter the party.\",\"Gabrielle joins the party.\"]}}}"
+  },
+  "replaySeqSwap": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"4/6\",\"seq\":{\"did\":\"seq_replay\",\"moves\":5,\"ok\":true}}",
+    "trace": "pointerdown dnditem:Dalia asks Gabr | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Gabrielle tells | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle final | pointerdown dnditem:Dalia tries to  | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle final | pointerdown dnditem:Gabrielle final | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Gabrielle and D | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 3: The Party||Step 5: Repasemos\":{\"4\":{\"seq\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\",\"Gabrielle tells Dalia she's not going to the party.\",\"Dalia tries to convince Gabrielle to come with her.\",\"Gabrielle finally agrees and goes to get ready.\",\"Gabrielle and Dalia enter the party.\",\"Gabrielle joins the party.\"]}}}"
+  },
+  "replaySeqInsert": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"4/6\",\"seq\":{\"did\":\"seq_replay\",\"moves\":5,\"ok\":true}}",
+    "trace": "pointerdown dnditem:Dalia asks Gabr | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Gabrielle tells | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Dalia tries to  | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Gabrielle final | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | pointerdown dnditem:Gabrielle and D | pointerup sequenceZone prSeq__zone--txt dndZone:Gabrielle joins | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 3: The Party||Step 5: Repasemos\":{\"4\":{\"seq\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\",\"Gabrielle tells Dalia she's not going to the party.\",\"Dalia tries to convince Gabrielle to come with her.\",\"Gabrielle finally agrees and goes to get ready.\",\"Gabrielle and Dalia enter the party.\",\"Gabrielle joins the party.\"]}}}"
+  },
+  "reviewDrop": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":7,\"saved\":3}",
+    "trace": "click A:Correct Answer | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 5: More Conditionals: Review||Step 3: Test\":{\"7\":{\"drop\":[\"brushed\",\"be sitting\",\"'d be\"]}}}"
+  },
+  "replayDrop": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"7/10\",\"drop\":{\"did\":\"drop_replay\",\"moves\":3,\"ok\":3,\"total\":3}}",
+    "trace": "pointerdown draggable wordBankTile:brushed | pointerup TTpanswerDiv droptarget: | pointerdown draggable wordBankTile:be sitting | pointerup TTpanswerDiv droptarget: | pointerdown draggable wordBankTile:'d be | pointerup TTpanswerDiv droptarget: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: More Conditionals: Review||Step 3: Test\":{\"7\":{\"drop\":[\"brushed\",\"be sitting\",\"'d be\"]}}}"
+  },
+  "practiceDrop": {
+    "kind": "droptarget",
+    "r": "{\"did\":\"drop_practice\",\"moves\":1,\"ok\":1,\"total\":1,\"kind\":\"droptarget\",\"retry\":{\"did\":\"drop_nothing_to_do\"},\"explorador\":{\"marcado\":false,\"firma\":\"droptarget|practice|droptarget\",\"pruebas\":[{\"accion\":\"clic: a.layout__mediaPlayPause\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: span.TTpanswerDiv \\\"feel\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false}],\"segundos\":5},\"taskMarked\":false}",
+    "trace": "pointerdown draggable wordBankTile:feel | pointerup TTpanswerDiv droptarget: | click layout__mediaPlayPause layout__mediaPlayPause--play: | click TTpanswerDiv droptarget:feel | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "practiceSeq": {
+    "kind": "sequence",
+    "r": "{\"did\":\"sequence_solved\",\"attempt\":1,\"verified\":true,\"kind\":\"sequence\",\"taskMarked\":true}",
+    "trace": "pointerdown dnditem draggable:Alex walked fro | pointerup dndZone:The reception c | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "practiceLegacyMCQ": {
+    "kind": "mcq_legacy",
+    "r": "{\"did\":\"mcq_legacy\",\"marked\":1,\"kind\":\"mcq_legacy\"}",
+    "trace": "click c ADUMClass lessonMultipleAnswer:The announcer's | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "practiceDnDOne": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "pointerdown dnditem:uno | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "testExpress": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_express\",\"salto\":true,\"submit\":true}",
+    "trace": "click learning__tasksNav_task:5 | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": null
+  },
+  "replayLegacyDDL": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"9/10\",\"lddl\":{\"did\":\"ddl_legacy_replay\",\"n\":2,\"ok\":2,\"total\":2,\"metodos\":[\"1:clic_texto\",\"2:clic_texto\"]}}",
+    "trace": "click questionText: | click LI:this | click questionText: | click LI:those | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: Nouns: This/That/These/Those||Step 4: Test\":{\"9\":{\"lddl\":[\"this\",\"those\"]}}}"
+  },
+  "replayDropCase": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"7/10\",\"drop\":{\"did\":\"drop_replay\",\"moves\":2,\"ok\":2,\"total\":2}}",
+    "trace": "pointerdown draggable wordBankTile:Why | pointerup TTpanswerDiv droptarget: | pointerdown draggable wordBankTile:weren't | pointerup TTpanswerDiv droptarget: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: Be-Past: Questions||Step 4: Test\":{\"7\":{\"drop\":[\"Why\",\"weren't\"]}}}"
+  },
+  "replayLegacyDDLAuto": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"3/10\",\"lddl\":{\"did\":\"ddl_legacy_replay\",\"n\":2,\"ok\":2,\"total\":2,\"metodos\":[\"1:ya_abierta\",\"2:foco_tab\"]}}",
+    "trace": "click LI:that | click questionText: | click arrow-down: | click answered: | click LI:this | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: Nouns: This/That/These/Those||Step 4: Test\":{\"3\":{\"lddl\":[\"that\",\"this\"]}}}"
+  },
+  "replayLegacyDDL4": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"12/15\",\"lddl\":{\"did\":\"ddl_legacy_replay\",\"n\":4,\"ok\":4,\"total\":4,\"metodos\":[\"1:clic_texto\",\"2:fuera+clic_texto\",\"3:fuera+clic_texto\",\"4:fuera+clic_texto\"]}}",
+    "trace": "click questionText: | click LI:starts | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 3: Prese | click questionText: | click LI:don't | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 3: Prese | click questionText: | click LI:am not | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 3: Prese | click questionText: | click LI:going | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 3: Present Simple: Review||Step 3: Test\":{\"12\":{\"lddl\":[\"starts\",\"don't\",\"am not\",\"going\"]}}}"
+  },
+  "reviewDropAnsId": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":3,\"saved\":1}",
+    "trace": "click A:Correct Answer | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 5: Pronouns: Object||Step 4: Test\":{\"3\":{\"drop\":[\"me\"]}}}"
+  },
+  "practiceMemory": {
+    "kind": "memory",
+    "r": "{\"did\":\"memory_tried\",\"pares\":2,\"intentos\":3,\"forma\":\"IW\",\"kind\":\"memory\",\"taskMarked\":true}",
+    "trace": "click memoG__cardIW:judge | click memoG__cardIW:thief | click memoG__cardIW:judge | click memoG__cardIW: | click memoG__cardIW:judge | click memoG__cardIW: | click memoG__cardIW:thief | click memoG__cardIW: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "speechFlow": {
+    "kind": "open_speech",
+    "r": "{\"did\":\"open_speech_solved\",\"ok\":true,\"kind\":\"open_speech\",\"taskMarked\":true}",
+    "trace": "click openSpeech__btn openSpeech__btnStart:Start | click openSpeech__btn openSpeech__btnSkip:Skip | click openSpeech__btn openSpeech__btnStop:Stop | click openSpeech__btn openSpeech__SentTTBtn:Send to teacher | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "sweepLesson": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"sweep_goto_test\"}",
+    "trace": "click learning__dropDownListTitleW--steps:Step 1: Explore | click learning__dropDownList_item:3. Test",
+    "ls": null
+  },
+  "sweepHome": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"sweep_open_unit\",\"unidad\":2}",
+    "trace": "click home__unit:2Healthy Eating | click home__courseListItemLink:2. Clean-House ",
+    "ls": null
+  },
+  "completarHome": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_abre_unidad\",\"unidad\":2}",
+    "trace": "click home__unit:2Healthy Eating | click home__courseListItemLink:2. Clean-House ",
+    "ls": null
+  },
+  "mcqImagenes": {
+    "kind": "mcq",
+    "r": "{\"did\":\"mcq_solved\",\"marked\":0,\"fromKnown\":0,\"kind\":\"mcq\",\"retry\":{\"did\":\"mcq_solved\",\"marked\":0,\"fromKnown\":0},\"explorador\":{\"marcado\":false,\"firma\":\"mcq||prMCQ__main.prMCQ__main--ansImages\",\"pruebas\":[{\"accion\":\"clic: div.prMCQ__answersW\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.prMCQ__answers\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.multiRadioWrapper\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.checkAnswerIcon\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: img.prMCQ__answerImage\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.prMCQ__answers\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.multiRadioWrapper\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: img.prMCQ__answerImage\",\"como\":\"clic\",\"cambio\":false,\"marco\":false}],\"segundos\":18},\"taskMarked\":false}",
+    "trace": "click prMCQ__answerImage: | pointerdown prMCQ__answerImage: | pointerup prMCQ__answerImage: | click multiRadioWrapper: | pointerdown multiRadioWrapper: | pointerup multiRadioWrapper: | click prMCQ__answers: | pointerdown prMCQ__answers: | pointerup prMCQ__answers: | click prMCQ__answerImage: | pointerdown prMCQ__answerImage: | pointerup prMCQ__answerImage: | click multiRadioWrapper: | pointerdown multiRadioWrapper: | pointerup multiRadioWrapper: | click prMCQ__answers: | pointerdown prMCQ__answers: | pointerup prMCQ__answers: | click prMCQ__answerImage: | pointerdown prMCQ__answerImage: | pointerup prMCQ__answerImage: | click multiRadioWrapper: | pointerdown multiRadioWrapper: | pointerup multiRadioWrapper: | click prMCQ__answers: | pointerdown prMCQ__answers: | pointerup prMCQ__answers: | click prMCQ__answerImage: | pointerdown prMCQ__answerImage: | pointerup prMCQ__answerImage: | click multiRadioWrapper: | pointerdown multiRadioWrapper: | pointerup multiRadioWrapper: | click prMCQ__answers: | pointerdown prMCQ__answers: | pointerup prMCQ__answers: | click prMCQ__answersW: | click prMCQ__answers: | click multiRadioWrapper: | click checkAnswerIcon: | click prMCQ__answerImage: | click prMCQ__answers: | click multiRadioWrapper: | click prMCQ__answerImage: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "myProgressLeer": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"mapa_leido\",\"tests_bajos\":1}",
+    "trace": "click myProgress__unitHeaderIW:Unit 1Couples10 | click myProgress__unitHeaderIW:Unit 2Sport And",
+    "ls": null
+  },
+  "barridoMapaHome": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"sweep_open_unit\",\"unidad\":1,\"leccion\":2}",
+    "trace": "click home__unit:Completed!1Coup | click home__courseListItemLink:2. Clean-House ",
+    "ls": null
+  },
+  "completarMapaHome": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_abre_unidad\",\"unidad\":2}",
+    "trace": "click home__unit:2Sport | click home__courseListItemLink:1. Directions t",
+    "ls": null
+  },
+  "testTerminadoBajo": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_started\"}",
+    "trace": "click btnStartTest:Start Test",
+    "ls": null
+  },
+  "testYaTerminado": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_ya_terminado\",\"key\":\"Lesson 1: Food||Step 3: Test\",\"pct\":null}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "testSinTerminar": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_started\"}",
+    "trace": "click btnStartTest:Start Test",
+    "ls": null
+  },
+  "testRendido": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_rendido_no_repito\",\"key\":\"Lesson 3: Present Simple: Review||Step 3: Test\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "completarSaltoOtraUnidad": {
+    "kind": "test_start",
+    "r": "{\"did\":\"sweep_home\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click learning__dropDownList_item:3. DramaComplet | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Call- | click A:Home",
+    "ls": null
+  },
+  "completarAlterna": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_ya_terminado\",\"key\":\"Lesson 5: Friends||Step 3: Test\",\"pct\":null,\"avance\":\"home\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 3: Drama | click learning__dropDownList_item:4. FamilyIn Pro | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 4: Famil | click learning__dropDownList_item:5. FriendsCompl | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 5: Frien | click learning__dropDownList_item:3. DramaIn Prog | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 3: Drama | click learning__dropDownList_item:4. FamilyIn Pro | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 4: Famil | click learning__dropDownList_item:5. FriendsCompl | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 5: Frien | click learning__dropDownList_item:3. DramaIn Prog | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 3: Drama | click learning__dropDownList_item:4. FamilyIn Pro | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 4: Famil | click learning__dropDownList_item:5. FriendsCompl | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home",
+    "ls": null
+  },
+  "replayLegacyDDLNouns": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"3/10\",\"lddl\":{\"did\":\"ddl_legacy_replay\",\"n\":2,\"ok\":2,\"total\":2,\"metodos\":[\"1:clic_texto\",\"2:fuera+clic_texto\"]}}",
+    "trace": "click questionText: | click LI:that | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 5: Nouns | click questionText: | click LI:this | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: Nouns: This/That/These/Those||Step 4: Test\":{\"3\":{\"lddl\":[\"that\",\"this\"]}}}"
+  },
+  "reporteDump": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"checkboxes_solved\",\"marked\":0,\"kind\":\"mcq_default\",\"retry\":{\"did\":\"checkboxes_solved\",\"marked\":0},\"explorador\":{\"marcado\":false,\"firma\":\"mcq_default|read again|\",\"pruebas\":[{\"accion\":\"clic: button.hotspot__btn \\\"Here\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: button.hotspot__btn \\\"There\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":false}],\"segundos\":5},\"taskMarked\":false}",
+    "trace": "click hotspot__btn:Here | click hotspot__btn:There | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "motivo": "tipo_desconocido",
+      "kind": "mcq_default",
+      "panelIzq": "Lisa lives in a tiny home near the lake.",
+      "controles": [
+        "button.hotspot__btn#7",
+        "button.hotspot__btn#8"
+      ],
+      "caja": true,
+      "tareas": [
+        "1*"
+      ],
+      "antes": 2,
+      "resultado": [
+        "did",
+        "explorador",
+        "kind",
+        "marked",
+        "retry",
+        "taskMarked"
+      ]
+    }
+  },
+  "exploreParlantes": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"parlantes:2\"],\"marcado\":true,\"waitDone\":3000,\"kind\":\"explore\",\"taskMarked\":true}",
+    "trace": "click speaker speakerTotheTop: | click speaker speakerTotheTop: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "memoryCorto": {
+    "kind": "memory",
+    "r": "{\"did\":\"memory_tried\",\"pares\":0,\"intentos\":6,\"forma\":\"IW\",\"kind\":\"memory\",\"explorador\":{\"marcado\":false,\"firma\":\"memory|practicing vocabulary|memoG__card.memoG__cardIW.memoG__cardSideFront.memoG__wrapper\",\"pruebas\":[{\"accion\":\"clic: a.layout__mediaPlayPause\",\"como\":\"clic\",\"cambio\":false,\"marco\":false},{\"accion\":\"clic: div.memoG__card \\\"amenity\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW \\\"amenity\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront \\\"amenity\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card \\\"apartment\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW \\\"apartment\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront \\\"apartment\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card \\\"dorm\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW \\\"dorm\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront \\\"dorm\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card \\\"tenant\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW \\\"tenant\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront \\\"tenant\\\"\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardIW\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__cardSideFront\",\"como\":\"clic\",\"cambio\":true,\"marco\":false},{\"accion\":\"clic: div.memoG__card\",\"como\":\"clic\",\"cambio\":true,\"marco\":false}],\"segundos\":61},\"taskMarked\":false}",
+    "trace": "click memoG__cardIW:amenity | click memoG__cardIW:apartment | click memoG__cardIW:amenity | click memoG__cardIW: | click memoG__cardIW:amenity | click memoG__cardIW: | click memoG__cardIW:amenity | click memoG__cardIW: | click memoG__cardIW:amenity | click memoG__cardIW: | click memoG__cardIW:apartment | click memoG__cardIW: | click memoG__cardIW:apartment | click memoG__cardIW: | click memoG__cardIW:amenity | click memoG__cardIW: | click layout__mediaPlayPause: | click memoG__card memoG__card--word:amenity | click memoG__cardIW:amenity | click memoG__cardSideFront:amenity | click memoG__card memoG__card--word:apartment | click memoG__cardIW:apartment | click memoG__cardSideFront:apartment | click memoG__card memoG__card--word:dorm | click memoG__cardIW:dorm | click memoG__cardSideFront:dorm | click memoG__card memoG__card--word:tenant | click memoG__cardIW:tenant | click memoG__cardSideFront:tenant | click memoG__card memoG__card--image: | click memoG__cardIW: | click memoG__cardSideFront: | click memoG__card memoG__card--image: | click memoG__cardIW: | click memoG__cardSideFront: | click memoG__card memoG__card--image: | click memoG__cardIW: | click memoG__cardSideFront: | click memoG__card memoG__card--image: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "ultima": "tarea_no_marcada",
+      "memoria": {
+        "intentos": 6,
+        "abiertas": 2,
+        "conAntes": true
+      }
+    }
+  },
+  "saltaYaFallo": {
+    "kind": "mcq",
+    "r": "{\"did\":\"saltado_ya_fallo\",\"kind\":\"mcq\",\"veces\":2}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "unitTestDesdeHome": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"unit_test_voy_a_my_progress\",\"unidad\":1}",
+    "trace": "click A:My Progress",
+    "ls": null
+  },
+  "unitTestMyProgress": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"unit_test_entrando\",\"unidad\":1,\"metodo\":\"my_progress:enlace\"}",
+    "trace": "click myProgress__unitLesson_link:Start",
+    "ls": null
+  },
+  "unitTestHomeLista": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"unit_test_entrando\",\"unidad\":1,\"metodo\":\"home\"}",
+    "trace": "click home__courseListItemLink:Unit Test",
+    "ls": null
+  },
+  "unitTestTermina": {
+    "kind": "media",
+    "r": "{\"did\":\"sweep_home\"}",
+    "trace": "click A:Home",
+    "ls": null,
+    "v": {
+      "actual": null,
+      "hechos": [
+        1
+      ],
+      "resultados": [
+        {
+          "unidad": 1,
+          "res": "hecho",
+          "metodo": "my_progress:enlace"
+        }
+      ]
+    }
+  },
+  "reintentosPorCorrida": {
+    "kind": "test_score",
+    "r": "{\"did\":\"opened_review_forced\",\"pct\":40}",
+    "trace": "click learning__testReviewLink:Review",
+    "ls": null
+  },
+  "exploreVideo": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"play:learning__RAMRButton\"],\"marcado\":true,\"waitDone\":3000,\"kind\":\"explore\",\"taskMarked\":true}",
+    "trace": "click learning__RAMRButton learning__RAMRButton--play: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "exploreTarjetas": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"tarjeta1\",\"cerrar:cursor-pointer\"],\"marcado\":true,\"waitDone\":3000,\"kind\":\"explore\",\"taskMarked\":true}",
+    "trace": "click learning__vocabularyCards_cardImageWrapper: | click cursor-pointer: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "memoriaDorso": {
+    "kind": "memory",
+    "r": "{\"did\":\"memory_one_action\",\"forma\":\"dorso\",\"giraron\":[true,true],\"kind\":\"memory\",\"taskMarked\":true}",
+    "trace": "click memoG__cardSide memoG__cardSideBack: | click memoG__cardSide memoG__cardSideBack: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "speakingFraseStart": {
+    "kind": "interactive_speaking",
+    "r": "{\"did\":\"interactive_speaking\",\"started\":true,\"metodo\":\"frase+start\",\"waitDone\":60000,\"kind\":\"interactive_speaking\",\"taskMarked\":true}",
+    "trace": "click chooseCaracterArrow: | click recordingPanelSentenceText:So, what kind o | click button continue:Start | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "speakingBranching": {
+    "kind": "interactive_speaking",
+    "r": "{\"did\":\"branching_speaking\",\"pasos\":[\"start\",\"grabar\"],\"marcado\":true,\"waitDone\":5000,\"kind\":\"interactive_speaking\",\"taskMarked\":true}",
+    "trace": "click button continue:Start | pointerdown button continue:Start | pointerup button continue:Start | click panelButton speakIcon: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "writingCorregir": {
+    "kind": "text",
+    "r": "{\"did\":\"text_solved\",\"n\":0,\"editados\":1,\"long\":false,\"waitDone\":3500,\"como\":[\"simulado\"],\"kind\":\"text\",\"taskMarked\":true}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "mcqImagenesCargando": {
+    "kind": "mcq",
+    "r": "{\"did\":\"mcq_solved\",\"marked\":3,\"fromKnown\":0,\"kind\":\"mcq\",\"taskMarked\":true}",
+    "trace": "click prMCQ__answerImage: | click prMCQ__answerImage: | click prMCQ__answerImage: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "dndTablaU8": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "pointerdown dnditem draggable:a high salary | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "exploreLecturaSinTareas": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"parlantes:1 (sin tarea: con un audio basta)\"],\"marcado\":false,\"waitDone\":3000,\"kind\":\"explore\"}",
+    "trace": "click speakerTotheTop speaker: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "exploreAudioTarde": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"audio_cargado\",\"sin_tarea\"],\"marcado\":false,\"waitDone\":3000,\"kind\":\"explore\"}",
+    "trace": "click layout__mediaPlayPause layout__mediaPlayPause--play: | pointerdown layout__mediaPlayPause layout__mediaPlayPause--play: | pointerup layout__mediaPlayPause layout__mediaPlayPause--play: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "textoEnTestNoToca": {
+    "kind": "test_question",
+    "r": "{\"did\":\"text_solved\",\"n\":0,\"editados\":0,\"long\":false,\"waitDone\":3500,\"kind\":\"text\"}",
+    "trace": "click tasksBtnext learning__submitTestLink:Submit",
+    "ls": null,
+    "v": "went"
+  },
+  "mcqImagenesEnTest": {
+    "kind": "test_question",
+    "r": "{\"did\":\"mcq_solved\",\"marked\":1,\"fromKnown\":0,\"kind\":\"mcq\"}",
+    "trace": "click prMCQ__answerImage: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": null,
+    "v": "X--"
+  },
+  "tableroOk": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "pointerdown dnditem:uno | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "8|6|2": {
+        "tareas": {
+          "1": "ok"
+        },
+        "motivo": null,
+        "reporte": null
+      }
+    }
+  },
+  "tableroFalla": {
+    "kind": "text",
+    "r": "{\"did\":\"text_solved\",\"n\":1,\"editados\":0,\"long\":false,\"waitDone\":3500,\"kind\":\"text\",\"retry\":{\"did\":\"text_solved\",\"n\":0,\"editados\":1,\"long\":false,\"waitDone\":3500,\"como\":[\"simulado\"]},\"explorador\":{\"marcado\":false,\"firma\":\"text|practice|\",\"pruebas\":[{\"accion\":\"teclear: input.\",\"como\":\"simulado\",\"cambio\":true,\"marco\":false}],\"segundos\":2},\"taskMarked\":false}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "10|3|2": {
+        "tareas": {
+          "1": "falla"
+        },
+        "motivo": "tarea_no_marcada",
+        "reporte": 42
+      }
+    }
+  },
+  "atascoPaginaSinCargar": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"sweep_home\",\"motivo\":\"pagina_sin_cargar\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click A:Home",
+    "ls": null
+  },
+  "testVacioAlHome": {
+    "kind": "test_question",
+    "r": "{\"did\":\"sweep_home\",\"motivo\":\"pagina_sin_cargar\"}",
+    "trace": "click A:Home",
+    "ls": null
+  },
+  "testYaHechoAvanza": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_ya_terminado\",\"key\":\"Lesson 2: Grumble's Department Store||Step 3: Test\",\"pct\":null,\"avance\":\"lección 3\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 2: Grumb | click learning__dropDownList_item:3. Don't Do Tha",
+    "ls": null
+  },
+  "myProgressUnitTestOculto": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"mapa_leido\",\"tests_bajos\":1}",
+    "trace": "click myProgress__unitHeaderIW:Unit 1Couples10 | click myProgress__unitHeaderIW:Unit 2Sport And",
+    "ls": null,
+    "v": {
+      "lecciones": [
+        "Nick and Emily,A New Acquaintance,Divorced",
+        "Food,Gym",
+        ""
+      ],
+      "tiempo": {
+        "h": 21,
+        "m": 30
+      },
+      "finalTest": 80
+    }
+  },
+  "completarAvanzaPaso": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_avance\",\"a\":\"paso 2\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 1: Explore | click learning__dropDownList_item:2. PracticeNot ",
+    "ls": null
+  },
+  "replayLegacyDDLRoy": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"12/15\",\"lddl\":{\"did\":\"ddl_legacy_replay\",\"n\":4,\"ok\":4,\"total\":4,\"metodos\":[\"1:ya_abierta\",\"2:clic_texto\",\"3:fuera+clic_texto\",\"4:fuera+clic_texto\"]}}",
+    "trace": "click LI:starts | click questionText: | click LI:don't | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 3: Prese | click questionText: | click LI:am not | click questionText: | click arrow-down: | click answered: | pointerdown questionText: | pointerup questionText: | click BODY:Lesson 3: Prese | click questionText: | click LI:going | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 3: Present Simple: Review||Step 3: Test\":{\"12\":{\"lddl\":[\"starts\",\"don't\",\"am not\",\"going\"]}}}"
+  },
+  "testSinPreguntas": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_sin_preguntas_recargo\",\"veces\":3}",
+    "trace": "click tasksBtnext learning__submitTestLink:Submit | click tasksBtnext learning__submitTestLink:Submit | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 5: Modals: Review||Step 3: Test\":{\"1\":{\"fitb\":[\"can\"]}}}",
+    "v": {
+      "recargas": 1
+    }
+  },
+  "avisoTestSalgo": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"aviso_test_sin_enviar\",\"boton\":\"Continue\"}",
+    "trace": "click okButton:",
+    "ls": null
+  },
+  "avisoTestVuelvo": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"aviso_test_sin_enviar\",\"boton\":\"Cancel\"}",
+    "trace": "click utils__cancelLInk:Cancel",
+    "ls": null
+  },
+  "completarHomeES": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_abre_unidad\",\"unidad\":3}",
+    "trace": "click home__courseListItemLink:2. Clean-House ",
+    "ls": null
+  },
+  "completarATests": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_a_tests\"}",
+    "trace": "",
+    "ls": null
+  },
+  "completarFin": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_fin\",\"widgets\":{\"completion\":100,\"avg\":100,\"curso\":null}}",
+    "trace": "",
+    "ls": null
+  },
+  "dndReverseGuia": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "click INPUT: | click driver-popover-next-btn:Got it! | pointerdown dnditem draggable:personality typ | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "guia": false,
+      "enBanco": 5
+    }
+  },
+  "clasificacionGuia": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "click INPUT: | click driver-popover-next-btn:Got it! | pointerdown dnditem draggable:Bob invented th | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "guia": false,
+      "enBanco": 5
+    }
+  },
+  "dndReverseSinGuia": {
+    "kind": "dnd",
+    "r": "{\"did\":\"dnd_one_action\",\"moves\":1,\"kind\":\"dnd\",\"taskMarked\":true}",
+    "trace": "pointerdown dnditem draggable:personality typ | pointerup dndZone: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "writingAriellaTeclado": {
+    "kind": "text",
+    "r": "{\"did\":\"text_solved\",\"n\":0,\"editados\":1,\"long\":false,\"waitDone\":3500,\"como\":[\"simulado\"],\"kind\":\"text\",\"taskMarked\":true}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": "wasa,too,didn't,be,getting,to come"
+  },
+  "exploreGramaticaAudio": {
+    "kind": "explore",
+    "r": "{\"did\":\"explore\",\"intentos\":[\"audio_cargado\",\"play:layout__mediaPlayPause\"],\"marcado\":true,\"waitDone\":3000,\"kind\":\"explore\",\"taskMarked\":true}",
+    "trace": "click layout__mediaPlayPause layout__mediaPlayPause--play CTrackerPlayBtnD: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "mcqImagenesIconosOcultos": {
+    "kind": "mcq",
+    "r": "{\"did\":\"mcq_solved\",\"marked\":1,\"fromKnown\":0,\"kind\":\"mcq\",\"taskMarked\":true}",
+    "trace": "click prMCQ__answerImage: | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": "multiRadioWrapper | multiRadioWrapper | multiRadioWrapper correct checked | multiRadioWrapper"
+  },
+  "finDeUnidadTestHecho": {
+    "kind": "test_start",
+    "r": "{\"did\":\"test_ya_terminado\",\"key\":\"Lesson 5: Friends||Step 3: Test\",\"pct\":null,\"avance\":\"home\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home | click tasksBtnext learning__nextItemLink:Next | click A:Home",
+    "ls": null,
+    "v": {
+      "unitsDone": [
+        12
+      ],
+      "phase": "home",
+      "reportes": []
+    }
+  },
+  "finDeUnidadPuntaje100": {
+    "kind": "test_score",
+    "r": "{\"did\":\"test_passed_100\",\"pct\":100}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 3: Test | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 5: Frien | click A:Home | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "unitsDone": [
+        12
+      ],
+      "phase": "in_unit"
+    }
+  },
+  "otroCursoCarrusel": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"otro_curso\",\"de\":\"UPB Beginners 1\",\"a\":\"UPB Beginners 2\"}",
+    "trace": "click carousel-control-next:",
+    "ls": null,
+    "v": {
+      "active": true,
+      "mode": "completar",
+      "cursoObjetivo": "UPB Beginners 2",
+      "cursosHechos": [
+        "UPB Beginners 1"
+      ],
+      "unitsDone": []
+    }
+  },
+  "exploradorAprende": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"checkboxes_solved\",\"marked\":0,\"kind\":\"mcq_default\",\"retry\":{\"did\":\"checkboxes_solved\",\"marked\":0},\"explorador\":{\"marcado\":true,\"firma\":\"mcq_default|practice|\",\"pruebas\":[{\"accion\":\"clic: span.rareW__icono \\\"o\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":true}],\"segundos\":0,\"accion\":\"clic: span.rareW__icono \\\"o\\\"\"},\"taskMarked\":true}",
+    "trace": "click rareW__icono:o | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": [
+      "clic div.answersWrapper > div.rareW > span.rareW__icono #0 ×1"
+    ]
+  },
+  "exploradorUsaAprendido": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"checkboxes_solved\",\"marked\":0,\"kind\":\"mcq_default\",\"retry\":{\"did\":\"checkboxes_solved\",\"marked\":0},\"explorador\":{\"marcado\":true,\"firma\":\"mcq_default|practice|\",\"pruebas\":[{\"accion\":\"APRENDIDO clic: span.rareW__icono\",\"marco\":true}],\"segundos\":0,\"accion\":\"clic: span.rareW__icono\",\"deAprendido\":true},\"taskMarked\":true}",
+    "trace": "click rareW__icono:o | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "reviewUltimaSinSalida": {
+    "kind": "test_review",
+    "r": "{\"harvested\":true,\"idx\":6,\"saved\":7}",
+    "trace": "click A:Respuesta corre | pointerdown doc | pointerup doc | click tasksBtnext learning__nextItemLink:Next | click A:Respuesta corre | pointerdown doc | pointerup doc | click tasksBtnext learning__nextItemLink:Next",
+    "ls": "{\"Lesson 3: The Party||Step 5: Repasemos\":{\"6\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\"],\"text\":\"Dalia asks Gabrielle why she's not ready to go to the party.\"},{\"label\":\"\",\"texts\":[\"Gabrielle tells Dalia she's not going to the party.\"],\"text\":\"Gabrielle tells Dalia she's not going to the party.\"},{\"label\":\"\",\"texts\":[\"Dalia tries to convince Gabrielle to come with her.\"],\"text\":\"Dalia tries to convince Gabrielle to come with her.\"},{\"label\":\"\",\"texts\":[\"Gabrielle finally agrees and goes to get ready.\"],\"text\":\"Gabrielle finally agrees and goes to get ready.\"},{\"label\":\"\",\"texts\":[\"Gabrielle and Dalia enter the party.\"],\"text\":\"Gabrielle and Dalia enter the party.\"},{\"label\":\"\",\"texts\":[\"Gabrielle joins the party.\"],\"text\":\"Gabrielle joins the party.\"}],\"seq\":[\"Dalia asks Gabrielle why she's not ready to go to the party.\",\"Gabrielle tells Dalia she's not going to the party.\",\"Dalia tries to convince Gabrielle to come with her.\",\"Gabrielle finally agrees and goes to get ready.\",\"Gabrielle and Dalia enter the party.\",\"Gabrielle joins the party.\"]}}}",
+    "v": "replay"
+  },
+  "catalogoGuarda": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"checkboxes_solved\",\"marked\":0,\"kind\":\"mcq_default\",\"retry\":{\"did\":\"checkboxes_solved\",\"marked\":0},\"explorador\":{\"marcado\":true,\"firma\":\"mcq_default|practice|\",\"pruebas\":[{\"accion\":\"clic: span.rareW__icono \\\"o\\\"\",\"como\":\"clic\",\"cambio\":false,\"marco\":true}],\"segundos\":0,\"accion\":\"clic: span.rareW__icono \\\"o\\\"\"},\"taskMarked\":true}",
+    "trace": "click rareW__icono:o | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": [
+      {
+        "curso": "UPB Intermediate 1",
+        "lugares": [
+          "U3|Lesson 2: Shopping|Step 2: Practice|T1 → ok explorador"
+        ],
+        "tipos": 1,
+        "conEjemplo": 1
+      }
+    ]
+  },
+  "catalogoAtajo": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"catalogo_atajo\",\"accion\":\"clic: span.rareW__icono\",\"marcado\":true,\"kind\":\"mcq_default\",\"taskMarked\":true}",
+    "trace": "click rareW__icono:o | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null
+  },
+  "explorarHomeTodas": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"completar_abre_unidad\",\"unidad\":1}",
+    "trace": "click home__unit:Completed!1Buyi | click home__courseListItemLink:1. Directions t",
+    "ls": null
+  },
+  "explorarSaltaTest": {
+    "kind": "test_start",
+    "r": "{\"did\":\"explorar_salta_test\",\"key\":\"Lesson 3: Drama||Step 3: Test\"}",
+    "trace": "click tasksBtnext learning__nextItemLink:Next | click learning__dropDownListTitleW learning__dropDownListTitleW--lessons:Lesson 3: Drama | click learning__dropDownList_item:4. FamilyIn Pro",
+    "ls": null
+  },
+  "repasoFinal": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"repaso\",\"unidades\":[2]}",
+    "trace": "",
+    "ls": null,
+    "v": {
+      "repaso": true,
+      "repasoHecho": true,
+      "unitsDone": [
+        1
+      ]
+    }
+  },
+  "popupDesconocido": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"checkboxes_solved\",\"marked\":0,\"kind\":\"mcq_default\",\"retry\":{\"did\":\"checkboxes_solved\",\"marked\":0},\"explorador\":{\"marcado\":false,\"firma\":\"mcq_default|practice|\",\"pruebas\":[],\"segundos\":0},\"taskMarked\":false}",
+    "trace": "click nuevoAviso__ok:OK | click tasksBtnext learning__nextItemLink:Next",
+    "ls": null,
+    "v": {
+      "sigue": false,
+      "reportes": [
+        "popup_desconocido",
+        "tipo_desconocido"
+      ]
+    }
+  },
+  "replayVerificaMismoBanco": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"3/5\",\"dnd\":{\"did\":\"dnd_replay\",\"moves\":4,\"ok\":4,\"total\":4}}",
+    "trace": "pointerdown dnditem draggable:344-555-9089 | pointerup dndZone: | pointerdown dnditem draggable:7743 N. Broadwa | pointerup dndZone: | pointerdown dnditem draggable:JoltGym.com | pointerup dndZone: | pointerdown dnditem draggable:info@joltgym.co | pointerup dndZone: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 2: Jolt Gym||Step 5: Let's review\":{\"3\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"344-555-9089\"],\"text\":\"344-555-9089\"},{\"label\":\"\",\"texts\":[\"7743 N. Broadway\"],\"text\":\"7743 N. Broadway\"},{\"label\":\"\",\"texts\":[\"JoltGym.com\"],\"text\":\"JoltGym.com\"},{\"label\":\"\",\"texts\":[\"info@joltgym.com\"],\"text\":\"info@joltgym.com\"},{\"label\":\"\",\"texts\":[],\"text\":\"\"}]}}}",
+    "v": []
+  },
+  "replayPreguntaMovida": {
+    "kind": "test_question",
+    "r": "{\"did\":\"test_replay\",\"idx\":\"1/5\",\"dnd\":{\"did\":\"dnd_replay\",\"moves\":1,\"ok\":1,\"total\":1}}",
+    "trace": "pointerdown dnditem draggable:renting | pointerup dndZone: | click tasksBtnext learning__submitTestLink:Submit",
+    "ls": "{\"Lesson 1: Ad||Step 3: Test\":{\"1\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"all kinds of homes\"],\"text\":\"all kinds of homes\"}]},\"4\":{\"dnd\":[{\"label\":\"\",\"texts\":[\"renting\"],\"text\":\"renting\"}]}}}",
+    "v": [
+      "renting"
+    ]
+  },
+  "rutaDirecta": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"ruta_directa\",\"a\":\"step\"}",
+    "trace": "click learning__dropDownListTitleW learning__dropDownListTitleW--steps:Step 2: Practic | click learning__dropDownList_item:3. TestIn Progr",
+    "ls": null
+  },
+  "verificacionFinal": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"verificar_my_progress\"}",
+    "trace": "",
+    "ls": null,
+    "v": {
+      "verificado": true,
+      "mapaHecho": false,
+      "unitsDone": []
+    }
+  },
+  "auditoriaFin": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"auditoria_fin\"}",
+    "trace": "click myProgress__unitHeaderIW:Unit 1Couples10 | click myProgress__unitHeaderIW:Unit 2Sport And",
+    "ls": null,
+    "v": {
+      "active": false,
+      "fin": true
+    }
+  },
+  "mantenimiento": {
+    "kind": "mcq_default",
+    "r": "{\"did\":\"ed_en_mantenimiento\"}",
+    "trace": "",
+    "ls": null,
+    "v": []
+  },
+  "scoreGiveUp": {
+    "kind": "test_score",
+    "r": "\"ERR ED_TEST_NO_100: Lesson 1||Step 4: Test quedó en 40% tras 2 reintentos. Revísalo y vuelve a __ed.auto().\"",
+    "trace": "click learning__testReviewLink:Review | click learning__testReviewLink:Review",
+    "ls": null
+  }
+}

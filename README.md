@@ -1,0 +1,135 @@
+# Bot-Ingles · ED-Autopilot
+
+> **¿Eres una IA o vas a continuar el proyecto?** Lee `CLAUDE.md` → `docs/handoff.md` → `docs/metodo.md`.
+> Para empezar un chat nuevo: `docs/PROMPT-INICIO.md`.
+
+Bot de consola para **English Discoveries** (UPB Santa Cruz). Resuelve las prácticas de cada lección y, en los tests, envía un primer intento, cosecha las respuestas correctas del *Review* y repite el test con ellas.
+
+**Versión actual: v21.17** — 📱 **panel del teléfono** (`panel/LEEME.md`: correr / parar / agregar cuentas sin cola, hasta 60 a la vez); cierra la guía de ED que tapaba la página; Explore con audio; Explorador que aprende y catálogo por nivel; fotos y diagnóstico en cada zip. Antes: ya no recarga la página dentro de las lecciones (dejaba a ED sin cargar); trabaja a ritmo de persona (pausas entre pasos, esperas más largas para lo que tarda en cargar); tablero en vivo con checks por cuenta (Issues → "📊 Tablero del bot") y banco de respuestas por curso; completa cursos sola en la nube (probado con v21.8 en 3 cuentas: hasta 97 %, promedio 100 %); ahora también videos y tarjetas de los "Explore", juego de memoria, speaking interactivo y ramificado, el writing de corregir, Unit Tests, y rehace solo los tests < 100 (ver `CHANGELOG.md`).
+
+---
+
+## Cómo usarlo
+
+### Opción A — cargar desde GitHub (una línea)
+
+En la pestaña de English Discoveries, abre la consola (**F12 → Console**) y pega:
+
+```js
+(async()=>{const R='Sebas0032/MandaSala';let u='https://raw.githubusercontent.com/'+R+'/main/dist/ed-autopilot.js?t='+Date.now();try{const c=await(await fetch('https://api.github.com/repos/'+R+'/commits/main',{cache:'no-store'})).json();if(c&&c.sha)u='https://raw.githubusercontent.com/'+R+'/'+c.sha+'/dist/ed-autopilot.js'}catch(e){}const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('GitHub respondió '+r.status+' (¿repo privado o archivo no subido?)');(0,eval)(await r.text())})().catch(e=>console.error('[ED loader]',e.message))
+```
+
+Luego `__ed.auto()` para arrancar (o el botón **Iniciar** de la cajita flotante).
+
+- **Siempre carga la ÚLTIMA versión** (AJUSTADA v21.14): primero le pregunta a GitHub cuál es el último commit y
+  carga el bot de ESE commit, así no te llega una copia vieja guardada. (La línea vieja podía tardar ~5 min en
+  traer la versión nueva después de un `git push`.) Confirma la versión en la cajita (`ED v21.17 OOP`).
+- El repo tiene que ser **público** para que esto funcione. Si es privado, GitHub responde 404 (ver opción C).
+- La primera vez Chrome pide escribir `allow pasting` en la consola.
+
+### Opción E — En la nube, sin tu PC
+
+Ver [`docs/nube.md`](docs/nube.md): Secrets `ED_USER_1` / `ED_PASS_1` → Actions → **nube** → Run workflow.
+
+### Opción D — Tampermonkey (recomendado para el barrido de tests)
+
+1. Instala la extensión **Tampermonkey** en Chrome.
+2. Tampermonkey → *Crear un nuevo script* → borra todo y pega el contenido de [`tools/cargador.user.js`](tools/cargador.user.js) → Guardar.
+   **Si ya lo tenías, reemplázalo UNA vez por el nuevo (v1.2):** siempre carga la última versión del bot y, desde
+   ahí, Tampermonkey actualiza solo el cargador.
+3. Desde ahí el bot se carga solo en cada página de ED (aparece la cajita). Arranca con **Iniciar** o Alt+E.
+   El barrido (`__ed.barrer()`) sigue solo aunque ED cambie de página.
+
+### Opción C — repo PRIVADO, con un token de solo lectura
+
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate.
+2. Repository access: **Only select repositories → MandaSala**. Permissions → Repository → **Contents: Read-only**. Pon una fecha de vencimiento.
+3. Carga con esta línea (reemplaza `TU_TOKEN`; **nunca** subas el token al repo):
+
+```js
+fetch('https://api.github.com/repos/Sebas0032/MandaSala/contents/dist/ed-autopilot.js?ref=main&t='+Date.now(),{headers:{Authorization:'Bearer TU_TOKEN',Accept:'application/vnd.github.raw'}}).then(r=>{if(!r.ok)throw new Error('GitHub respondió '+r.status);return r.text()}).then(eval).catch(e=>console.error('[ED loader]',e.message))
+```
+
+### Opción B — pegar el archivo a mano
+
+Abre [`dist/ed-autopilot.js`](dist/ed-autopilot.js) → botón **Copy raw file** → pégalo en la consola → `__ed.auto()`.
+
+> Siempre **recarga la página (F5)** antes de cargar una versión nueva.
+
+### Comandos
+
+| Comando | Para qué |
+|---|---|
+| `__ed.auto()` / `__ed.stop()` | Arrancar / pausar |
+| `__ed.step()` | Un solo paso (resuelve y pulsa Next) |
+| `__ed.solve()` | **Resuelve solo esta pantalla, sin Next** — para probar un tipo de ejercicio |
+| `__ed.solve('dnd')` | Fuerza un tipo concreto |
+| `__ed.dragTest()` | Prueba UN arrastre y dice si funcionó |
+| `__ed.inspect()` | Qué ve el bot en esta pantalla (pásalo si algo falla) |
+| `__ed.cfg({...})` | Cambiar configuración (se guarda) |
+| `__ed.answers()` / `__ed.testAnswers()` | Respuestas cosechadas |
+| `__ed.sweep()` | Ir a lo primero pendiente de la unidad y arrancar |
+| `__ed.reopenTest()` | Volver al test (tras el review) |
+| `__ed.copyAnswers()` / `export()` | Respaldar respuestas |
+| **Alt+E** | Iniciar / parar |
+| `__ed.completar()` | Desde el Home: TODO el curso unidad por unidad y luego tests < 100 |
+| `__ed.barrer()` | Barrido: busca y rehace tests < 100, lección por lección y unidad por unidad |
+| `__ed.barrerEstado()` / `barrerStop()` | Ver resultados del barrido / desactivarlo |
+| `__ed.report()` | Copia el reporte de fallos (también: botón 📋 de la cajita) |
+| `__ed.cfg({testExpress:false})` | Desactivar el test exprés |
+| `__ed.cfg({practiceOneAction:false})` | Prácticas: volver a completar todo |
+| `__ed.help()` | Lista de comandos |
+
+---
+
+## Estructura
+
+```
+src/                     ← AQUÍ se edita
+  bootstrap.js             versión (único lugar) + limpieza de instalaciones previas
+  core/config.js           CFG, claves de localStorage, regex
+  core/storage.js          StorageManager
+  core/navigation.js       NavigationManager (tareas, Next, popups)
+  core/dropdowns.js        DropdownNav (desplegables de lección/step, de v17)
+  core/sweep.js            barrido de tests < 100 (lecciones y unidades)
+  core/engine.js           MainEngine: detectKind() → runKind() → step()
+  utils/dom.js             q, qa, vis, click, waitFor...
+  utils/logger.js          log, warn, errLog
+  utils/drag.js            motor de arrastre + dndModel (igual desde v17)
+  utils/scroll.js          revealInBox: scroll dentro de cajas con barra propia
+  utils/dnd-model.js       testDndModel: banco/huecos en tests (clasificación)
+  utils/practice.js        practiceEnough: en prácticas, con UNA acción basta
+  utils/press.js           clic verificado (3 intentos distintos)
+  utils/reporter.js        reporte automático de fallos
+  utils/fake-mic.js        micrófono simulado (PCs sin micrófono)
+  exercises/               UN archivo por tipo de ejercicio
+    writing.js  select-text.js  sequence.js  dnd.js  mcq.js  droptarget.js
+    mcq-legacy.js  ddl-legacy.js   (componentes viejos de ED)
+    memory.js                memory game (parejas)
+    fitb.js  text.js  media.js  speaking.js
+    index.js               los une en PracticeSolver
+  tests/test-manager.js    tests: score, review (cosecha), replay
+  ui/console-api.js        window.__ed
+  ui/hud.js                cajita flotante
+  ui/shortcuts.js          atajo Alt+E
+  main.js                  arranque
+dist/ed-autopilot.js     ← GENERADO por build.js. No se edita a mano.
+probes/                  scripts de diagnóstico de solo lectura
+tools/regresion.js       prueba "¿rompí algo sin querer?"
+tools/cargador.user.js   cargador para Tampermonkey
+cloud/runner.js          robot de la nube (Playwright) — lo lanza .github/workflows/nube.yml
+legacy/                  versiones viejas (solo referencia, para rescatar funciones)
+docs/                    arquitectura, estado de cada ejercicio, pendientes
+```
+
+## Desarrollo
+
+```bash
+node build.js        # genera dist/ed-autopilot.js (sin dependencias)
+npm install          # solo la primera vez, para las pruebas (jsdom)
+npm test             # ¿cambió el comportamiento de algún tipo?
+```
+
+Flujo de un cambio: editar **un** archivo de `src/` → `node build.js` → `npm test` → probar en ED real → commit de `src/` **y** `dist/` juntos. GitHub Actions rechaza el push si `dist/` no está al día o si las pruebas fallan.
+
+Reglas completas en [`CLAUDE.md`](CLAUDE.md). Documentación en [`docs/`](docs/).
